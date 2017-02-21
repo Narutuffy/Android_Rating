@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Dialog dialogBox=new Dialog(MainActivity.this);
         dialogBox.setContentView(R.layout.activity_main);
-        dialogBox.setCancelable(true);
+        dialogBox.setCancelable(false);
         dialogBox.show();
 
         final RatingBar ratingBar= (RatingBar)dialogBox.findViewById(R.id.rating_bar);

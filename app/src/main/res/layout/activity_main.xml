@@ -7,6 +7,17 @@
     android:layout_height="wrap_content"
 
     tools:context="com.example.vamsirao.rating.MainActivity">
+
+
+    <TextView
+        android:text="Rate the Advertisement"
+        android:textColor="@android:color/black"
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
 <RatingBar
     android:id="@+id/rating_bar"
     android:layout_width="wrap_content"
