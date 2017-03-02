@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                String rating=String.valueOf(ratingBar.getRating());
-                Toast.makeText(MainActivity.this,"You've rated "+rating+" stars",Toast.LENGTH_SHORT).show();
+                float rating=ratingBar.getRating();
+
+              if(rating!=0.0)
                 dialogBox.dismiss();
+                Toast.makeText(MainActivity.this,"You've rated "+rating+" stars",Toast.LENGTH_SHORT).show();
             }
         });
 
