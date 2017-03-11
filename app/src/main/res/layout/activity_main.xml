@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"/>
-<RatingBar
+<!--<RatingBar
     android:id="@+id/rating_bar"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -27,7 +27,11 @@
     android:layout_gravity="center"
     android:progressTint="@android:color/holo_orange_dark"
     android:progressBackgroundTint="@android:color/holo_orange_dark"
-    android:secondaryProgressTint="@android:color/holo_orange_dark" />
+    android:secondaryProgressTint="@android:color/holo_orange_dark" />-->
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smile_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/button"
         android:layout_gravity="center"
