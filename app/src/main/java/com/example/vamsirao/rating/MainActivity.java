@@ -24,37 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
             setContentView(R.layout.activity_main);
 
-     /*   final Dialog dialogBox=new Dialog(MainActivity.this);
-        dialogBox.setContentView(R.layout.activity_main);
-        dialogBox.setCancelable(false);
-        dialogBox.show();*/
 
-
-
-       // final RatingBar ratingBar= (RatingBar)dialogBox.findViewById(R.id.rating_bar);
 
         SmileRating smileRating= (SmileRating)findViewById(R.id.smile_rating);
 
-        //setting onClickListener on SmileyRating
-
-        smileRating.setOnSmileySelectionListener(new SmileRating.OnSmileySelectionListener(){
-
-            @Override
-            public void onSmileySelected(@BaseRating.Smiley int smiley, boolean reselected) {
-                switch (smiley) {
-                    case SmileRating.BAD:
-                         break;
-                    case SmileRating.GOOD:
-                        break;
-                    case SmileRating.GREAT:
-                        break;
-                    case SmileRating.OKAY:
-                        break;
-                    case SmileRating.TERRIBLE:
-                        break;
-                }
-            }
-        });
 
         smileRating.setOnRatingSelectedListener(new SmileRating.OnRatingSelectedListener(){
             @Override
@@ -72,10 +45,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-
-
-                Toast.makeText(MainActivity.this,"You've rated "+rating+"",Toast.LENGTH_SHORT).show();
-
+                if(rating==0)
+                {
+                    Toast.makeText(MainActivity.this,"You've not rated, please do rate",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "Thank you", Toast.LENGTH_SHORT).show();
+                }
         }});
 
 

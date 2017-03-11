@@ -30,8 +30,10 @@
     android:secondaryProgressTint="@android:color/holo_orange_dark" />-->
     <com.hsalf.smilerating.SmileRating
         android:id="@+id/smile_rating"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginRight="175dp"/>
     <Button
         android:id="@+id/button"
         android:layout_gravity="center"
